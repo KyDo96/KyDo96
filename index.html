@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./html5-qrcode.min.js"></script>
+</head>
+<body>
+    <div>kyProHead</div>
+    <div style="width: 500px" id="reader"></div>
+    <script>
+        function onScanSuccess(qrCodeMessage) {
+	// handle on success condition with the decoded message
+}
+
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
+
+console.log("xxxxxxxxxxx")
+    </script>
+</body>
+</html>
